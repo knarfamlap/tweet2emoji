@@ -1,9 +1,9 @@
 ##### Core scientific packages
-jupyter
-matplotlib
-numpy
-pandas
-scipy
+jupyter==1.0.0
+matplotlib==3.1.2
+numpy==1.17.3
+pandas==0.25.3
+scipy==1.3.1
 
 # Efficient jobs (caching, parallelism, persistence)
 joblib==0.14.0
@@ -16,16 +16,20 @@ scikit-learn==0.22
 
 xgboost==0.90
 
-nltk==3.4.5
-urlextract==0.13.0
+nltk
+urlextract
 
 # Optional: tqdm displays nice progress bars, ipywidgets for tqdm's notebook support
-tqdm==4.40.0
-ipywidgets==7.5.1
+tqdm
+ipywidgets
 
 ##### Deep Learning packages
 
-tensorflow==1.15.2 
+tensorflow==1.15.2
 
 tensorboard==1.15.0
 tensorflow-estimator==1.15.1
+
+### Twitter API
+tweepy
+twython
