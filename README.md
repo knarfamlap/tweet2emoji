@@ -1,1 +1,1 @@
-# clasfica-emoji
+# emoji-classifier
