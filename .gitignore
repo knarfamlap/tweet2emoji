@@ -1,3 +1,4 @@
+src/pkl_objects
 config.py
 *.bak
 *.ckpt
@@ -13,3 +14,4 @@ images/**/*.dot
 my_*
 /venv
 datasets/
+__pycache__

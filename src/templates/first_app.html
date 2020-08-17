@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>
+        Tweet2Emoji
+    </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="align-self-start">
+            <h1 class='text-light'>Tweet2Emoji</h1>
+            <h4 class='text-light'>This is an emoji predictor</h4>
+        </div>
+
+        <div class="input-group rounded-circle input-group-lg">
+            <input type="text" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-lg">
+        </div>
+        <div>
+            <input type="submit" value="Submit", name="submit_btn">
+        </div>
+    </div>
+</body>
+
+</html>
