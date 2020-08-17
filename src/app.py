@@ -2,7 +2,11 @@ import pickle
 import os
 import numpy as np
 from vectorizer import vect, emoji_mappings
-from wtforms import Form, TextAreField, validators
+from flask import Flask, render_template, request
+from wtforms import Form, TextAreaField, validators
+from flask_bootstrap import Bootstrap
+
+
 
 app = Flask(__name__)
 
@@ -15,12 +19,31 @@ def classify(document):
 
     proba = np.max(clf.predict_proba(X))
 
-    return  emoji_mappings.iloc[y], proba
+    return  emoji_mappings.iloc[y]['ucode'], proba
+
+class InputForm(Form):
+    input = TextAreaField('', [validators.DataRequired()])
+
+
+
 
 
 @app.route('/')
 def index():
-    return render_template('first_app.html')
+    form = InputForm(request.form)
+    return render_template('first_app.html', form=form)
+
+@app.route('/results', methods=['POST']) 
+def results():
+    form = InputForm(request.form)
+
+    if request.method == 'POST' and form.validate():
+        input = request.form['input']
+        y, proba = classify(input)
+        return render_template('results.html', content=input, prediction=y, probability=round(proba*100, 2))
+
+    return render_template('first_app.html', form=form)
+
 
 if __name__ == '__main__': 
     app.run()

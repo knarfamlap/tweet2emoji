@@ -12,20 +12,31 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="align-self-start">
-            <h1 class='text-light'>Tweet2Emoji</h1>
-            <h4 class='text-light'>This is an emoji predictor</h4>
+    {% from "_formhelpers.html" import render_field %}
+
+    <div class="align-self-center">
+        <div >
+
+            <div class="d-flex justify-content-center">
+                <h1 class='text-light'>Tweet2Emoji</h1>
+            </div>
+            <form action="/results" method="post">
+                <div class="input-group rounded-circle input-group-lg">
+                    <div class="container ">
+                        <dl>
+                            {{ render_field(form.input, class="form-control", ) }}
+                        </dl>
+                    </div>
+                </div>
+                <div class="container">
+                    <input class="btn btn-dark btn-lg btn-block" type="submit" value="Submit" , name="submit_btn">
+                </div>
+            </form>
         </div>
 
-        <div class="input-group rounded-circle input-group-lg">
-            <input type="text" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-lg">
-        </div>
-        <div>
-            <input type="submit" value="Submit", name="submit_btn">
-        </div>
     </div>
+
+
 </body>
 
 </html>

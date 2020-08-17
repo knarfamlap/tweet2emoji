@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Tweet2Emoji</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <h1 class='text-light'>Tweet2Emoji</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+            <h2 class="text-light">Your tweet: "{{ content }}"</h2>
+        </div>
+
+        <h1 class="d-flex justify-content-center text-light">This tweet can match with: {{ prediction }}
+            (Probability: {{ probability }}%)</h1>
+
+
+        <div id='button'>
+            <form action="/">
+                <input class="btn btn-dark btn-lg btn-block" type=submit value='Submit Another'>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
