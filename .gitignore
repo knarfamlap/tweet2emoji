@@ -12,6 +12,6 @@ tf_logs/*
 images/**/*.png
 images/**/*.dot
 my_*
-/venv
+/env
 datasets/
 __pycache__

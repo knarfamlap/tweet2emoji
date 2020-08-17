@@ -31,6 +31,5 @@ twython
 preprocessor
 
 Flask
-flask_bootstrap
 gunicorn==19.9.0
 wtforms

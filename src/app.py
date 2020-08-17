@@ -4,7 +4,6 @@ import numpy as np
 from vectorizer import vect, emoji_mappings
 from flask import Flask, render_template, request
 from wtforms import Form, TextAreaField, validators
-from flask_bootstrap import Bootstrap
 
 
 
