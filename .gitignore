@@ -1,4 +1,3 @@
-src/pkl_objects
 config.py
 *.bak
 *.ckpt
