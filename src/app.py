@@ -4,13 +4,14 @@ import numpy as np
 from vectorizer import vect, emoji_mappings
 from flask import Flask, render_template, request
 from wtforms import Form, TextAreaField, validators
-
+import bz2
+import _pickle as cPickle
 
 
 app = Flask(__name__)
 
 cur_dir = os.path.dirname(__file__)
-clf = pickle.load(open(os.path.join(cur_dir, "pkl_objects", "sgdc_clf.pkl"), 'rb'))
+clf = cPickle.load(bz2.BZ2File(os.path.join(cur_dir, "pkl_objects", "cmprs.pbz2"), 'rb'))
 
 def classify(document):
     X = vect.transform([document])
