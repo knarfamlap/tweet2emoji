@@ -1,1 +1,1 @@
-# emoji-classifier
+# Tweet2Emoji
