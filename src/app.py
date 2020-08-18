@@ -24,9 +24,6 @@ class InputForm(Form):
     input = TextAreaField('', [validators.DataRequired()])
 
 
-
-
-
 @app.route('/')
 def index():
     form = InputForm(request.form)
