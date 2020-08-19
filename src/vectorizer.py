@@ -1,11 +1,14 @@
 from sklearn.feature_extraction.text import HashingVectorizer
 import re
 import os
-import pickle
+import gzip
+import _pickle as cPickle
+import bz2
+
 
 cur_dir = os.path.dirname(__file__)
 
-emoji_mappings = pickle.load(open(os.path.join(cur_dir, 'pkl_objects', 'emoji_mappings.pkl'), 'rb'))
+emoji_mappings = cPickle.load(bz2.BZ2File(os.path.join(cur_dir, "pkl_objects", "emoji_mappings.pbz2"), 'rb'))
 
 def tokenizer(text):
     return text.split()
