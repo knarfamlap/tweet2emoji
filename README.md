@@ -1,4 +1,4 @@
-# [Tweet2Emoji](https://tweet02emoji.herokuapp.com/) 
+# :fire: [Tweet2Emoji](https://tweet02emoji.herokuapp.com/) :fire:
 
 Tweet2Emoji is a emoji classifier. It takes your tweets and assigns an appropriate emoji. 
 
