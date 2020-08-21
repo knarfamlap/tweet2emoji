@@ -3,7 +3,8 @@ jupyter==1.0.0
 numpy
 pandas
 seaborn
-
+keras
+tensorflow
 # Easy http requests
 requests==2.22.0
 
@@ -24,3 +25,4 @@ gunicorn==19.9.0
 wtforms
 
 gensim
+imbalanced-learn
