@@ -8,6 +8,29 @@ Tweet2Emoji is a emoji classifier. It takes your tweets and assigns an appropria
 ## Data
 
 
+### CNN 
+
+|      Layer     |                                                              Params                                                             | Value |
+|:--------------:|:-------------------------------------------------------------------------------------------------------------------------------:|-------|
+|    Embedding   | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> |2001   |
+|     Dropout    |                                                            Percentage                                                           |       |
+| 1D Convolution |                        Filters<br> Kernel Size <br> Activation <br> Padding <br> Kernel Regularizer <br>                        |       |
+| 1D Max Pooling | Pool Size                                                                                                                       |       |
+| Flatten        | /                                                                                                                               |       |
+| Dropout        | Percentage                                                                                                                      |       |
+| Dense          | Classes <br> Activation                                                                                                         |       |
+
+
+###  Bi-LSTM
+
+|      Layer            |                                                              Params                                                             | Value |
+|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-------:|
+|Embedding              | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> |2001   |
+|1D Spatial Dropout     |                                                            Percentage                                                           |20     |
+|Bi-LSTM                | Output Dimensionality                                                                                                           |64     |
+|Bi-LSTM                | Output Dimensionality                                                                                                           |32     | 
+|Dense                  | Classes <br> Activation                                                                                                         |20<br>softmax|
+
 
 
 ## Limitations
