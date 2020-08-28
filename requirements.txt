@@ -23,6 +23,3 @@ preprocessor
 Flask
 gunicorn==19.9.0
 wtforms
-
-gensim
-imbalanced-learn
