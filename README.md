@@ -1,11 +1,14 @@
 # :fire: [Tweet2Emoji](https://tweet02emoji.herokuapp.com/) :fire:
 
-## Introduction
+Tweet2Emoji is a emoji classifier. It takes your tweets and assigns an appropriate emoji. Given the text of a tweet, our machine learning model can predict the most likely assosiated emoji's. We framed the problem as multi-class classification problem. 
 
-Tweet2Emoji is a emoji classifier. It takes your tweets and assigns an appropriate emoji. Given the text of a tweet, our machine learning model can predict the most likely assosiated emoji's. We framed the problem as multi-class classification problem. With the dataset in used, we identified the 10 most commonly used emojis. We decided to used **Logistic Regression**, **Support Vector Machines(SVM)**, and **Naive Bayes** to see which classifier preforms the best. The current baseline approach (and the approach used the web app [here](Tweet2Emoji](https://tweet02emoji.herokuapp.com/)) is Logistic Regression. We then evaluate the model using accuracy and F1 score.
+With the dataset in used, we identified the 20 most commonly used emojis. We decided to used **Logistic Regression**, **Support Vector Machines(SVM)**, and **Naive Bayes** to see which classifier preforms the best. The current baseline approach is **SVM**. The baseline model preforms poorly in the multiclass problem with 20 different emojis. It reaches a F1 score of 1 with low accuracy. 
 
+Moreover, neural networks preformed better than the baseline model. Using a **Bi-LSTM** and a **CNN**  reached F1 scores of 15 and 17 respectively. Both **Bi-LSTM** and **CNN** used **trainable GloVe embeddings**. 
 
-## Data (TODO)
+## Data
+
+The dataset used can be found [here](). 
 
 
 ### CNN 
