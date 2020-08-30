@@ -10,6 +10,8 @@ Moreover, neural networks preformed better than the baseline model. Using a **Bi
 
 [Here](https://tweet02emoji.herokuapp.com/) is the webapp. Load times might be a bit long. 
 
+The dataset for this project can be found in its Kaggle page [here](https://www.kaggle.com/knarfamlap/tweet2emoji/)
+
 <!-- ## Data
 
 The dataset used can be found [here](). 
@@ -17,26 +19,26 @@ The dataset used can be found [here]().
 
 ### CNN 
 
-|      Layer     |                                                              Params                                                             | Value |
-|:--------------:|:-------------------------------------------------------------------------------------------------------------------------------:|-------|
-|    Embedding   | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> |2001   |
-|     Dropout    |                                                            Percentage                                                           |       |
+|     Layer      |                                                             Params                                                              | Value |
+| :------------: | :-----------------------------------------------------------------------------------------------------------------------------: | ----- |
+|   Embedding    | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> | 2001  |
+|    Dropout     |                                                           Percentage                                                            |       |
 | 1D Convolution |                        Filters<br> Kernel Size <br> Activation <br> Padding <br> Kernel Regularizer <br>                        |       |
-| 1D Max Pooling | Pool Size                                                                                                                       |       |
-| Flatten        | /                                                                                                                               |       |
-| Dropout        | Percentage                                                                                                                      |       |
-| Dense          | Classes <br> Activation                                                                                                         |       |
+| 1D Max Pooling |                                                            Pool Size                                                            |       |
+|    Flatten     |                                                                /                                                                |       |
+|    Dropout     |                                                           Percentage                                                            |       |
+|     Dense      |                                                     Classes <br> Activation                                                     |       |
 
 
 ###  Bi-LSTM
 
-|      Layer            |                                                              Params                                                             | Value |
-|:---------------------:|:-------------------------------------------------------------------------------------------------------------------------------:|:-------:|
-|Embedding              | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> |2001   |
-|1D Spatial Dropout     |                                                            Percentage                                                           |20     |
-|Bi-LSTM                | Output Dimensionality                                                                                                           |64     |
-|Bi-LSTM                | Output Dimensionality                                                                                                           |32     | 
-|Dense                  | Classes <br> Activation                                                                                                         |20<br>softmax|
+|       Layer        |                                                             Params                                                              |     Value     |
+| :----------------: | :-----------------------------------------------------------------------------------------------------------------------------: | :-----------: |
+|     Embedding      | Input Dimensions <br> Output Dimensions <br> Weights <br> Maximum Sequence Length <br> Trainable<br> Embeddings Regularizer<br> |     2001      |
+| 1D Spatial Dropout |                                                           Percentage                                                            |      20       |
+|      Bi-LSTM       |                                                      Output Dimensionality                                                      |      64       |
+|      Bi-LSTM       |                                                      Output Dimensionality                                                      |      32       |
+|       Dense        |                                                     Classes <br> Activation                                                     | 20<br>softmax |
 
 
 
