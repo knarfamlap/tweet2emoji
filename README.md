@@ -4,9 +4,13 @@ Tweet2Emoji is a emoji classifier. It takes your tweets and assigns an appropria
 
 With the dataset in used, we identified the 20 most commonly used emojis. We decided to used **Logistic Regression**, **Support Vector Machines(SVM)**, and **Naive Bayes** to see which classifier preforms the best. The current baseline approach is **SVM**. The baseline model preforms poorly in the multiclass problem with 20 different emojis. It reaches a F1 score of 1 with low accuracy. 
 
-Moreover, neural networks preformed better than the baseline model. Using a **Bi-LSTM** and a **CNN**  reached F1 scores of 15 and 17 respectively. Both **Bi-LSTM** and **CNN** used **trainable GloVe embeddings**. 
+Moreover, neural networks preformed better than the baseline model. Using a **Bi-LSTM** and a **CNN**  reached F1 scores of 15 and 18 respectively. Both **Bi-LSTM** and **CNN** used **trainable GloVe embeddings**. 
 
-## Data
+[main.ipynb](main.ipynb) contains all data exploration and code to reproduce results. 
+
+[Here](https://tweet02emoji.herokuapp.com/) is the webapp. Load times might be a bit long. 
+
+<!-- ## Data
 
 The dataset used can be found [here](). 
 
@@ -89,7 +93,7 @@ Then open `main.ipynb`
 - [x] Clean up Jupyter notebook
 - [ ] Finish README
 - [ ] Clean up webpage
-  - [ ] add github links to footer
+  - [ ] add github links to footer -->
 
 ## Authors
 - Frank Palma Gomez  (**@knarfamlap**)
